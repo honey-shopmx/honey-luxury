@@ -546,22 +546,6 @@
       </div>
     </div>
 
-    <div class="product-card reveal" onclick="openModal('tank')">
-      <div class="product-img-wrap">
-        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=600&q=80" alt="Cartier Tank">
-        <div class="quick-view">Vista Rápida</div>
-      </div>
-      <div class="product-info">
-        <p class="product-brand">Cartier</p>
-        <h3 class="product-name">Tank Must<br>Or Jaune Large</h3>
-        <p class="product-desc">Caja rectangular baño oro. Cuadrante azul.</p>
-        <div class="product-footer">
-          <div class="product-price"><small>precio</small>$3,800</div>
-          <a href="https://wa.me/526461481411?text=Hola,%20me%20interesa%20el%20Cartier%20Tank" class="btn-wa" onclick="event.stopPropagation()"><span>Preguntar</span></a>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -589,39 +573,6 @@
         <div class="product-footer">
           <div class="product-price"><small>precio</small>$1,350</div>
           <a href="https://wa.me/526461481411?text=Hola,%20me%20interesa%20el%20Collar%20Piedra%20Central" class="btn-wa" onclick="event.stopPropagation()"><span>Preguntar</span></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card reveal" onclick="openModal('vca')">
-      <div class="product-badge new">Nuevo</div>
-      <div class="product-img-wrap">
-        <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80" alt="Van Cleef">
-        <div class="quick-view">Vista Rápida</div>
-      </div>
-      <div class="product-info">
-        <p class="product-brand">Van Cleef & Arpels</p>
-        <h3 class="product-name">Pulsera Alhambra<br>Trébol Dorado</h3>
-        <p class="product-desc">20 motivos trébol · Baño oro 18k · Nácar blanco</p>
-        <div class="product-footer">
-          <div class="product-price"><small>precio</small>$1,800</div>
-          <a href="https://wa.me/526461481411?text=Hola,%20me%20interesa%20la%20Pulsera%20Alhambra" class="btn-wa" onclick="event.stopPropagation()"><span>Preguntar</span></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card reveal" onclick="openModal('bvlgari')">
-      <div class="product-img-wrap">
-        <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&q=80" alt="Bvlgari">
-        <div class="quick-view">Vista Rápida</div>
-      </div>
-      <div class="product-info">
-        <p class="product-brand">Bvlgari</p>
-        <h3 class="product-name">Anillo B.Zero1<br>Rose Gold</h3>
-        <p class="product-desc">Acero con baño oro rosa · Diseño icónico</p>
-        <div class="product-footer">
-          <div class="product-price"><small>precio</small>$950</div>
-          <a href="https://wa.me/526461481411?text=Hola,%20me%20interesa%20el%20Anillo%20B.Zero1" class="btn-wa" onclick="event.stopPropagation()"><span>Preguntar</span></a>
         </div>
       </div>
     </div>
@@ -762,29 +713,11 @@ const products = {
     price: '$8,900', wa: 'Hola,%20me%20interesa%20el%20Patek%20Philippe%20Nautilus',
     img: 'https://xcimg.szwego.com/20201229/i1609221128_3009_0.jpg'
   },
-  'tank': {
-    brand: 'Cartier', name: 'Tank Must Or Jaune Large',
-    desc: 'Silhoueta rectangular inspirada en los tanques de la Primera Guerra Mundial — un ícono desde 1917. Caja en baño oro amarillo con cuadrante azul laca y corona zafiro. Correa de cuero liso con hebilla dorada. Movimiento de cuarzo.',
-    price: '$3,800', wa: 'Hola,%20me%20interesa%20el%20Cartier%20Tank',
-    img: 'https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=600&q=80'
-  },
   'nuevo-collar': {
     brand: 'Luxury Collection', name: 'Collar Piedra Central Oro Amarillo',
     desc: 'Collar tipo gargantilla con gran piedra central facetada en tono champán brillante. Montura y cadena en baño de oro amarillo. Cierre de seguridad. Ideal para ocasiones especiales o uso diario elegante.',
     price: '$1,350', wa: 'Hola,%20me%20interesa%20el%20Collar%20Piedra%20Central',
     img: 'https://http2.mlstatic.com/D_NQ_NP_671975-MLM75258340600_032024-O.webp'
-  },
-  'vca': {
-    brand: 'Van Cleef & Arpels', name: 'Pulsera Alhambra Trébol',
-    desc: 'Pulsera vintage Alhambra con 20 motivos trébol de cuatro hojas — símbolo de la buena suerte. Motivos en nácar blanco natural con borde festoneado en baño de oro 18k. Cierre de presión oculto. Longitud 19cm.',
-    price: '$1,800', wa: 'Hola,%20me%20interesa%20la%20Pulsera%20Alhambra',
-    img: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80'
-  },
-  'bvlgari': {
-    brand: 'Bvlgari', name: 'Anillo B.Zero1 Rose Gold',
-    desc: 'Anillo arquitectónico en acero inoxidable con baño de oro rosa. Banda espiral con el logo BVLGARI grabado que se enrolla alrededor de un disco central liso. Diseño audaz y andrógino inspirado en el Coliseo Romano.',
-    price: '$950', wa: 'Hola,%20me%20interesa%20el%20Anillo%20B.Zero1',
-    img: 'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&q=80'
   }
 };
 
@@ -823,4 +756,5 @@ function showToast(msg) {
 </script>
 </body>
 </html>
+
 
